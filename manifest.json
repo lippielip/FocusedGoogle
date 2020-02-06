@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Focused Google",
+  "version": "1.0",
+
+  "description": "Removes unnecessary clutter from Google search",
+
+  "icons": {
+    "48": "icons/trash-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://google.com/*","*://google.de/*","*://google.co.uk/*","*://www.google.com/*","*://www.google.de/*","*://www.google.co.uk/*"],
+      "js": ["whitespacer.js"]
+    }
+  ]
+
+}
